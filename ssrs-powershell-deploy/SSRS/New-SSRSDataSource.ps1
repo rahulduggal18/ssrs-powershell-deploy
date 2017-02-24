@@ -10,7 +10,7 @@ function New-SSRSDataSource (
 
 	Write-Verbose "Processing DataSource '$RdsPath'..."
 
-	$Folder = Normalize-SSRSFolder -Folder $Folder
+	$Folder = ConvertTo-SSRSFolder -Folder $Folder
 
 	[xml]$Rds = Get-Content -Path $RdsPath
 	$ConnProps = $Rds.RptDataSource.ConnectionProperties
