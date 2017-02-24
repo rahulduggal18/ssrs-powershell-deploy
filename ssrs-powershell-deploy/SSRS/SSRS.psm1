@@ -17,4 +17,4 @@
 . $PSScriptRoot\Publish-SSRSProject.ps1
 . $PSScriptRoot\Publish-SSRSSolution.ps1
 
-Export-ModuleMember Get-SSRSCredential, Normalize-SSRSFolder, New-XmlNamespaceManager, New-SSRSFolder, New-SSRSDataSource, New-SSRSDataSet, New-SSRSReport, New-SSRSWebServiceProxy, Get-SSRSProjectConfiguration, Publish-SSRSProject, Publish-SSRSSolution
+Export-ModuleMember Get-SSRSCredential, ConvertTo-SSRSFolder, New-XmlNamespaceManager, New-SSRSFolder, New-SSRSDataSource, New-SSRSDataSet, New-SSRSReport, New-SSRSWebServiceProxy, Get-SSRSProjectConfiguration, Publish-SSRSProject, Publish-SSRSSolution
