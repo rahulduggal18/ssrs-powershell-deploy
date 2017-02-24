@@ -44,6 +44,7 @@ function New-SSRSDataSource (
 		if ($Overwrite) {
 			Write-Verbose " - overwriting"
 			$write = $true
+			$proxy.DeleteItem($DataSource.Path)
 		} else {
 			Write-Verbose " - skipped, already exists"
 		}
