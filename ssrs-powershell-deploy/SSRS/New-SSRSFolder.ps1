@@ -12,7 +12,7 @@ function New-SSRSFolder (
 		Write-Verbose "Creating SSRS folder '$Name'"
 	}
 
-	$Name = Normalize-SSRSFolder -Folder $Name
+	$Name = ConvertTo-SSRSFolder -Folder $Name
 
 	if ($Proxy.GetItemType($Name) -ne 'Folder') {
 		$Parts = $Name -split '/'
