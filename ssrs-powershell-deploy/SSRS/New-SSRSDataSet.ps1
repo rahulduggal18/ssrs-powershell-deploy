@@ -10,7 +10,7 @@ function New-SSRSDataSet (
 	$script:ErrorActionPreference = 'Stop'
 	Write-Verbose "Processing DataSet '$RsdPath'..."
 
-	$Folder = Normalize-SSRSFolder -Folder $Folder
+	$Folder = ConvertTo-SSRSFolder -Folder $Folder
 
 	$Name =  [System.IO.Path]::GetFileNameWithoutExtension($RsdPath)
 	$RawDefinition = Get-Content -Encoding Byte -Path $RsdPath
