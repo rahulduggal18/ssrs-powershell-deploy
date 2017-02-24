@@ -127,8 +127,8 @@
 		}
 
 
-	$Folder = Normalize-SSRSFolder -Folder $Folder
-	$DataSourceFolder = Normalize-SSRSFolder -Folder $DataSourceFolder
+	#$Folder = ConvertTo-SSRSFolder -Folder $Folder
+	#$DataSourceFolder = ConvertTo-SSRSFolder -Folder $DataSourceFolder
 
 	$Proxy = New-SSRSWebServiceProxy -Uri $ServerUrl -Credential $Credential
 
