@@ -42,9 +42,9 @@
 
 	return New-Object -TypeName PSObject -Property @{
 		ServerUrl = $Config.Options.TargetServerUrl
-		Folder = Normalize-SSRSFolder -Folder $Config.Options.TargetFolder
-		DataSourceFolder = Normalize-SSRSFolder -Folder $Config.Options.TargetDataSourceFolder
-		DataSetFolder = Normalize-SSRSFolder -Folder $Config.Options.TargetDataSetFolder
+		Folder = ConvertTo-SSRSFolder -Folder $Config.Options.TargetFolder
+		DataSourceFolder = ConvertTo-SSRSFolder -Folder $Config.Options.TargetDataSourceFolder
+		DataSetFolder = ConvertTo-SSRSFolder -Folder $Config.Options.TargetDataSetFolder
 		OutputPath = $Config.Options.OutputPath
 		OverwriteDataSources = $OverwriteDataSources
 		OverwriteDatasets = $OverwriteDatasets
