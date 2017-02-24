@@ -2,7 +2,7 @@
 #Dot source all ps1 files
 #These are the small function used by others
 . $PSScriptRoot\Get-SSRSCredential.ps1
-. $PSScriptRoot\Normalize-SSRSFolder.ps1
+. $PSScriptRoot\ConvertTo-SSRSFolder.ps1
 . $PSScriptRoot\New-XmlNamespaceManager.ps1
 
 . $PSScriptRoot\New-SSRSFolder.ps1
