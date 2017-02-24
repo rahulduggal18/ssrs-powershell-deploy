@@ -1,4 +1,4 @@
-function Normalize-SSRSFolder (
+function ConvertTo-SSRSFolder (
 	[string]$Folder
 )
 {
